@@ -1,0 +1,1235 @@
+/* CSS ContainerPA */
+
+
+/* CSS Principaples */
+body{
+    background-color: #295264;
+}
+#ContainerPrincipal{
+    width: 98%;
+    height: 850PX;
+    margin: 10px;
+    background-color: #fad9a6;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#containerProductos{
+    float: right;
+    margin-top: 50px;
+    width: 1500px;
+}
+
+
+#containerProm{
+    float: left;
+    margin: 0px;
+    width: 250px;
+    margin-top: 45px;
+    margin-left: 40px;
+    min-height: 715px;
+    background-color: #142433;
+    border-radius: 10px;
+}
+
+.tarjeta{
+    text-align: center;
+    float: left;
+    top: 150px;
+    width: 400px;
+    margin: 10px;
+    background-color: #bd2f28;
+    padding: 20px;
+    border-radius: 35px;
+
+}
+
+.tarjetaPromocion{
+    display: inline-block;
+    width: 290px;
+    min-height: 100px;
+    margin: 1px;
+    background-color: #bd2f28;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;  
+
+}
+
+#promocion {
+    display: inline-block;
+    width: 100%;
+    margin: 2px;
+    text-align: center;
+}
+
+#ContainerBotones{
+    width: 98%;
+    margin: auto;
+    background-color: #fad9a6;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#logotipo{
+    padding: 10px;
+    position: left;
+    width: 200px;
+    height: 100px;
+
+}
+.botones{
+    position: relative;
+    border: black 1px solid;
+    display: inline-block;
+    width:  21%;
+    min-height: 100px;
+    margin: 2px;
+    text-align: center;
+    background-color: #bd2f28;
+    cursor: pointer;
+}
+
+
+#fotos{
+    width: 80px;
+    min-height: 80px;
+    border-radius: 50%;
+}
+
+.tarjeta h1{
+    color: #000;
+    margin: 5px;
+
+}
+    
+#promocion{
+    width: 240px;
+    min-height: 660px;
+    margin-top: 25px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+#iconos{
+    float: left;
+    width: 15%;
+    margin-top: 20px;
+    margin-left: 20px;   
+}
+
+.botones h2{
+    float: left;
+    margin: 0px;
+    display: flex;
+    color: #fad9a6;
+    text-align: center;
+    font-size: 20px;
+    padding: 0px;
+    margin-top: 40px;
+    margin-left: 15px;
+    font-family: 'merienda';
+    font-size: 22px;
+
+}
+h3 {
+
+        color: #000;
+        margin: 5px;
+        text-align: left;
+        font-family: merienda;
+        font-size: 50px;
+}
+
+
+#containerInferior{
+    float: right;
+    position: absolute;
+    background-color:#142433;
+    margin-top: 50px;
+    width: 98%;
+    min-height: 100px;
+    border-radius: 20px;
+    top: 100%;
+}
+
+#containerInferior, p{
+    color: #ffffff;
+}
+
+h4{
+    color: #ffffff;
+    margin: 5px;
+    text-align: center;
+    font-family: merienda;
+    font-size: 20px;
+}
+
+h5{
+    display: block;
+    float: left;
+    color: #ffffff;
+    margin: 5px;
+    text-align: center;
+    font-family: merienda;
+    font-size: 15px;
+}
+
+.ul{
+    display: block;
+    float: left;
+    color: #ffffff;
+    margin: 5px;
+    text-align: left;
+    font-family: merienda;
+    font-size: 15px;
+}
+
+.tarjeta h6{
+    font-size: 15px;
+}
+
+.containerInferior p   {
+    position: relative;
+    margin-left: 100%;
+    color: #ffffff;
+    margin: 5px;
+    text-align: center;
+    font-family: merienda;
+    font-size: 15px;
+}
+#pollo{
+    position: absolute;
+    right: 1%;
+    bottom: 0%;
+    width: 400px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+/* CSS Catalogo */
+#agregar{
+    font-family: 'merienda';
+    margin-top: 2%;
+    float: right;
+    width: 30%;
+    margin-right: 5px;
+    border-radius: 5px;
+    border:#142433 solid 1px;
+    font-size: 15px;
+    background-color: #89373d;
+    color: #142433;
+    cursor: pointer;
+}
+
+#calificar{
+    font-family: 'merienda';
+    margin-top: 2%;
+    width: 30%;
+    margin-right: 5px;
+    font-size: 15px;
+    border: #bd2f28;
+    background-color: #bd2f28;
+    color: #142433;
+    cursor: pointer;
+}
+
+#favorito{
+    position: relative;
+    font-family: 'merienda';
+    width: 15%;
+    margin-left: 380px;
+    border-radius: 5px;
+    border:#142433 solid 1px;
+    font-size: 20px;
+    background-color: #A1AFB5;
+    color: #142433;
+    cursor: pointer;
+}
+
+#containerProductos{
+    width: 80.5%;
+    text-align: left;
+    float: right;
+}
+
+#producto{
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    display: inline-block;
+}
+.target {   
+    display: inline-block;
+    width: 22%;
+    min-height: 180px;
+    background-color:#bd2f28;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius:10px;
+}
+
+
+#logotipo{
+    padding: 10px;
+    position: left;
+    width: 200px;
+    height: 100px;
+
+}
+
+.botones{
+    position: relative;
+    border: black 1px solid;
+    display: inline-block;
+    width:  21%;
+    min-height: 100px;
+    margin: 2px;
+    text-align: center;
+    background-color: #bd2f28;
+    cursor: pointer;
+}
+
+#iconos{
+    float: left;
+    width: 15%;
+    margin-top: 20px;
+    margin-left: 20px;   
+}
+
+.catalogo{
+    position: relative;
+    width: 80%;
+    float:right;
+    margin: 10px;
+    background-color: #fad9a6;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.catalogo h1{
+    margin: 20px;
+    width: 100px;
+    position: relative;
+    text-align: left;
+    padding: 0px;
+    font-family: 'merienda';
+    font-size: 30px;
+}
+
+#barraBusqueda{
+    width: 50%;
+    margin: auto;
+    background-color: #a1afb5;
+    padding: 10px;
+    display: inline;
+    border-radius: 10px;
+    text-align: left;
+    
+}
+::placeholder{
+    color: #295264;
+    font-family: 'merienda';
+}
+
+.productos{
+    position: relative;
+    background-color: #89373d;
+    width: 20%;
+    margin: 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.target, ★{
+    font-size: 20px;
+}
+
+/* CSS Login */
+
+::placeholder{
+    color: #295264;
+    font-family: 'merienda';
+}
+
+
+#Login{
+    position: relative;
+    width: 98%;
+    
+    margin: 10px;
+    background-color: #fad9a6;
+    padding: 10px;
+    border-radius: 10px;
+}
+.bannerInferior{
+    min-height: 264px;
+    float: left;
+    position: absolute;
+    height: 25%;
+    margin-left: 17px;
+    margin-right: 17px;
+    border-radius: 10px;
+    bottom: 20px;
+    left: 0px;
+    background-color: #89373d;
+}
+
+
+#container{
+    width: 400px;
+    height: 305px;
+    display: flex;
+    background-color: #142433;
+    border: 2px solid;
+    border-color: #000000;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 10px;
+    border-radius: 10px;  
+    margin-bottom: 40px;
+}
+
+.container{
+    background-color: #295264;
+    border-color: #ff0000;
+    border-radius: 10px;  
+}
+
+.container h3{
+    font-family: 'Merienda';
+    font-size: 20px;
+    left: 0;
+    margin-top: 10px;
+}
+
+.container h2{
+    font-family: 'Merienda';
+    font-size: 25px;
+    -webkit-text-stroke: 1px #142433;
+    text-align: center;
+    margin-top: 10px;
+
+}
+#container h1{
+    font-family: 'Merienda';
+    -webkit-text-stroke: 1px rgb(0, 0, 0);;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.zoom:hover{
+    transform: scale(1.5);
+}
+.promo{
+    position: absolute;
+    bottom: 0;
+    right: -1px;
+    left: 4%;
+    width: 15%;
+    top: 1%;
+
+}
+
+.promo2{
+    position: absolute;
+    bottom: 0;
+    right: 34%;
+    top: 7%;
+    width: 24%;
+
+}
+
+#Login form{
+    width: 379px;
+    height: 209px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid;
+    border-color: #000000;
+    border-radius: 10px;
+    background-color: #477a90;
+}
+
+.casilla{
+    font-family: 'Merienda';
+    border-color: #000000;
+    -webkit-text-stroke: 1px #142433;
+    background-color: #a1afb5;
+    border-radius: 10px;
+    height: 25px;
+    width: 172px;
+}
+
+.ingresar{
+    width: 23%;
+    font-family: 'Merienda';
+    border-color: #000000;
+    background-color: #a1afb5;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.registrar{
+    cursor: pointer;
+    font-family: 'Merienda';
+    width: 23%;
+    background-color: #a1afb5;
+    border-color: #000000;
+    border-radius: 5px;
+}
+.olvidemicontraseña{
+    cursor: pointer;
+    font-family: 'Merienda';
+    border-color: #000000;
+    background-color: #a1afb5;
+    border-radius: 5px;
+}
+
+.bannerInferior h1{
+    font-family: 'Merienda';
+    font-size: 35px;
+    -webkit-text-stroke: 1px #000000;
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bannerInferior h2{
+    font-family: 'Merienda';
+    font-size: 30px;
+    -webkit-text-stroke: 1px #000000;
+    color:#000000;
+    text-align: center;
+    margin-top: -22px;
+    width: 57%;
+    margin-left: 21%;
+}
+
+#pollo2{
+    position: fixed;
+    width: 12%;
+    right: 6% ;
+    bottom: 3%;
+    border-radius: 10px;
+}
+
+/* CSS Registro */
+
+#registrarse{
+    float: right;
+    width: 82%;
+    margin: 0px;
+    margin-top: 40px;
+    background-color: #fad9a6;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center; 
+}
+
+#registrarse h2{
+    float: left;
+    margin: 0px;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    padding: 0px;
+    color: #fad9a6  ;
+    margin-top: 40px;
+    margin-left: 15px;
+    font-family: 'merienda';
+    font-size: 22px;
+
+}
+#registrarse h1{
+    margin: 20px;
+    width: 100px;
+    position: relative;
+    text-align: left;
+    left:150px;
+    padding: 0px;
+    font-family: 'merienda';
+    font-size: 30px;
+}
+
+#registrarse h4{
+    color: #000;
+    position: relative;
+    text-align: left;
+    width: 400px;
+    left: 175px;
+    font-family: 'merienda';
+    font-size: 20px;
+    margin: 0%;
+}
+
+#botonRegistro{
+    position: absolute;
+    bottom: 20%;
+    left: 40%;
+    width: 175px;
+    height: 55px;
+    margin: 10px;
+    background-color: #a1afb5;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'merienda';
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#botonCancelar{
+    position: absolute;
+    bottom: 20%;
+    left: 28%;
+    width: 175px;
+    height: 55px;
+    margin: 10px;
+    background-color: #a1afb5;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'merienda';
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#casillasRegistro{
+    display: inline-block;
+    width:  545px;
+    margin: 2px;
+    text-align: left;
+    background-color: #a1afb5;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#casillaLargaRegistro{
+    display: inline-block;
+    width:  1120px;
+    margin: 2px;
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #a1afb5;
+    padding: 10px;
+    border-radius: 10px;
+}
+#casillaSeleccionRegistro{
+    display: inline-block;
+    width:  1145px;
+    margin: 2px;
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #a1afb5;
+    padding: 10px;
+    border-radius: 10px; 
+
+}
+#casillaDireccionRegistro{    
+    display: inline;
+    width: 245px;
+    margin: 2px;
+    text-align: left;
+    background-color: #a1afb5;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#casillaSeleccionDRegistro{
+    display: inline-block;
+    width:  962px;
+    margin: 2px;
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #a1afb5;
+    padding: 10px;
+    border-radius: 10px;     
+}
+
+#casillaDireccion2Registro{    
+    display: inline-block;
+    width:  150px;
+    margin: 2px;
+    text-align: left;
+    background-color: #a1afb5;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#casillaSeleccionViaRegistro{
+    display: inline-block;
+    width:  300px;
+    margin: 2px;
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #a1afb5;
+    padding: 10px;
+    border-radius: 10px; 
+}
+
+#registrarse form{ 
+    background-color: #fad9a6;
+    border: #fad9a6;
+    width: 100%;
+    height: 209px;
+    text-align: center;
+    padding: 10px; 
+    border-radius: 10px; 
+}
+
+/* CSS RecupContraseña */
+
+.cancelar{
+    width: 23%;
+    font-family: 'Merienda';
+    border-color: #000000;
+    background-color: #a1afb5;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.recuperar{
+    cursor: pointer;
+    font-family: 'Merienda';
+    width: 23%;
+    background-color: #a1afb5;
+    border-color: #000000;
+    border-radius: 5px;
+}
+
+/* CSS Carrito */
+
+.producto{
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    display: inline-block;
+}
+.targetCarrito {   
+    margin-left: 40px;
+    display: inline-block;
+    width: 80%;
+    min-height: 180px;
+    background-color:#bd2f28;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius:10px;
+}
+.contador {
+    position: relative;
+    width: 24%;
+    top: -37px;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.incrementar, .decrementar {
+    display: inline-flex;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 0px 9px;
+    cursor: pointer;
+    align-items: center;
+}
+
+#botonComprar{
+    position: relative;
+    top: -52px;
+    left: 92%;
+    width: 7%;
+    height: 4vh;
+    border: none;
+    border-radius: 10px;
+    background-color: #bd2f28;
+    color: #fad9a6;
+    font-size: 1em;
+}
+
+/* CSS Calificacion */
+
+#ContainerCalificacion{
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 80%;
+    float: right;    
+    font-family: 'merienda';
+    text-align: left;
+}
+
+#ContainerCalificacion h2{
+    display: inline;
+    right: 20%;
+    top: 26%;
+    position: absolute;
+    margin: 0px;
+    color: #000;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'merienda';
+}
+
+#ContainerCalificacion h3{
+    display: inline;
+    right: 51%;
+    top: 26%;
+    position: absolute;
+    margin: 0px;
+    color: #000;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'merienda';
+}
+#ContainerCalificacion h6{
+    display: inline;
+    width: 300px;
+    right: 44%;
+    top: 30%;
+    position: absolute;
+    margin: 0px;
+    color: #000;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'merienda';
+}
+#producto{
+    float: left;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
+
+.targetCalificacion {   
+    display: inline-block;
+    width: 22%;
+    min-height: 180px;
+    background-color:#bd2f28;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius:10px;
+}
+
+
+.clasificacion{
+    position: absolute;
+    display: inline-block;
+    right: 14%;
+    top: 30%;
+    margin: 0px;
+    width: 20%;
+    font-size: 50px;
+}
+#form {
+    width: 100px;
+    margin: 0 auto;
+    height: 25px;
+}
+    
+#form label {
+        font-size: 1000px;
+}    
+input[type="radio"] {
+        display: none;
+    }
+label {
+        color: grey;
+    }
+    
+.clasificacion {
+        direction: rtl;
+        unicode-bidi: bidi-override;
+    }  
+.clasificacion2 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}  
+label:hover,
+label:hover ~ label {
+        color: orange;
+}
+    
+input[type="radio"]:checked ~ label {
+    color: orange;
+}
+
+#ContainerComentarios{
+    width: 80%;
+    text-align: left;
+    float: right;
+}
+
+#ContainerComentarios h1{
+    left: 100px;
+    font-family: 'merienda';
+}
+
+
+.clasificacion2{
+    font-size: 50px;
+    margin: 0%;
+}
+
+#comentarios{
+    width: 45%;
+    min-height: 200px;
+    border-radius: 10px;
+    border: #000 solid 1px;
+    float: left;
+    display: inline;
+}
+
+.comentarios, ::placeholder{
+    font-family: 'merienda';
+
+}
+
+#opiniones{
+    width: 40%;
+    min-height: 300px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: #000 solid 1px;
+    float: left;
+    display: inline;
+}
+
+#ContainerComentarios h2{
+    position: absolute;
+    color: #000;
+    right: 36%;
+    bottom: 32%;
+}
+
+#cancelarComentarios{
+    cursor: pointer;
+    position: relative;
+    left: 18%;
+    bottom: 10%;
+    width: 7%;
+    height: 4vh;
+    border: none;
+    border-radius: 10px;
+    background-color: #bd2f28;
+    color: #fad9a6;
+    font-size: 1em;
+}
+#enviarComentarios{
+    cursor: pointer;
+    position: relative;
+    left: 18%;
+    bottom: 10%;
+    width: 7%;
+    height: 4vh;
+    border: none;
+    border-radius: 10px;
+    background-color: #bd2f28;
+    color: #fad9a6;
+    font-size: 1em;
+}
+
+/* CSS Pedidos */
+
+.containerDatosP{
+    position: inherit;
+
+}
+
+.containerDatosP h2{
+    float: left;
+    margin: 0px;
+    display: flex;
+    color: #fad9a6;
+    text-align: center;
+    font-size: 20px;
+    padding: 0px;
+    margin-top: 40px;
+    margin-left: 15px;
+    font-family: 'merienda';
+    font-size: 22px;
+
+}
+.containerDatosP h3 {
+
+        color: #000;
+        margin: 5px;
+        text-align: left;
+        font-family: merienda;
+        font-size: 50px;
+}
+
+@font-face{
+    font-family: 'Merienda Regular';
+    src: url(./fuentes/Merienda-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-height: normal;
+}
+
+
+.containerDatosP form{
+    background-color: #fad9a6;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 54%;
+    height: 90%;
+    gap: 10px;
+    right: -24%;
+    margin-top: 2%;
+    padding: 10px;
+}
+
+.contenedorDatos{
+    display: flex;
+    gap: 215px;
+}
+.seleccionArriba{
+    display: flex;
+    gap: 236px;
+}
+.contenedorDatos2{
+    display: flex;
+    flex-direction: column;
+}
+
+.seleccionAbajo{
+    display: flex;
+    gap: 221px;
+}
+
+
+.cajaCodigo{
+    display: flex;
+    gap: 100px;
+}
+
+#casillaSeleccionArriba1Pedido{
+    width: 272%;
+    height: 40%;
+    font-family: 'Merienda Regular';
+    position: relative;
+    border: 2px solid;
+    border-radius: 15px;
+}
+
+#casillaSeleccionArriba2Pedido{
+    width: 320%;
+    height: 40%;
+    font-family: 'Merienda Regular';
+    position: relative;
+    border: 2px solid;
+    border-radius: 15px;
+}
+
+
+#casillaSeleccionAbajo1Pedido{
+    width: 245%;
+    height: 40%;
+    font-family: 'Merienda Regular';
+    position: relative;
+    border: 2px solid;
+    border-radius: 15px;
+}
+
+#casillaSeleccionAbajo2Pedido{
+    width: 193%;
+    height: 40%;
+    font-family: 'Merienda Regular';
+    position: relative;
+    border: 2px solid;
+    border-radius: 15px;
+}
+
+
+
+#cajaCodigo{
+    width: 390%;
+    height: 40%;
+    font-family: 'Merienda Regular';
+    position: relative;
+    border: 2px solid;
+    border-radius: 15px;
+}
+
+.containerDatosP h1{
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Merienda Regular'
+}
+
+#casillaDatos{
+    width: 190%;
+    height: 40%;
+    font-family: 'Merienda Regular';
+    position: relative;
+    border: 2px solid;
+    border-radius: 15px;
+}
+
+#casillaDireccionPedido{
+    float: left;
+    width: 73%;
+    height: 40%;
+    font-family: 'Merienda Regular';
+    position: relative;
+    border: 2px solid;
+    border-radius: 15px;
+    text-align: left;
+}
+.cajaBotones{
+    display: flex;
+    gap: 10px;
+}
+
+#casillaPedido{
+    float: left;
+    width: 73%;
+    height: 40%;
+    font-family: 'Merienda Regular';
+    position: relative;
+    border: 2px solid;
+    border-radius: 15px;
+}
+
+.botonCancelar{
+    width: 150px;
+    height: 40px;
+    margin-top: 2%;
+    background-color: #bd2f28;
+    color: white;
+    font-family: 'Merienda Regular';
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botonConfirmar{
+    width: 150px;
+    height: 40px;
+    margin-top: 2%;
+    background-color: #bd2f28;
+    color: white;
+    font-family: 'Merienda Regular';
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contenedorProducto{
+    position: absolute;
+    width: 320px; /* Ajusta según tu diseño */
+    height: 200px; /* Ajusta según tu diseño */
+    background-color: #89373d; /* Color de fondo */
+    align-items: center;
+    display: flex;
+    bottom: 56%;
+    left: 19%;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+
+.imagenProducto{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* CSS Locales */
+
+#mapa{
+    float: left;
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+#mapa h1{
+    margin: 5px;
+    text-align: left;
+    margin-left: 5%;
+}
+#informacion{
+    float: left;
+    width: 18%;
+    right: 10px;
+    top: 60px;
+    border-radius: 10px;
+    background-color: #bd2f28;
+    position: relative;
+}
+
+#informacion h2{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 19px;
+    font-family: 'merienda';
+    text-align: center;
+}
+
+#informacion h3{
+    width: 300px;
+    font-size: 20px;
+    font-family: 'merienda';
+    font-size: 15px;
+    text-align: center;
+}
+
+/* CSS Favoritos */
+
+.agregar{
+    font-family: 'merienda';
+    width: 15%;
+    margin-left: 380px;
+    border-radius: 5px;
+    border:#142433 solid 1px;
+    font-size: 20px;
+    background-color: #A1AFB5;
+    color: #142433;
+    cursor: pointer;
+}
+
+
+#Agregar{
+    font-family: 'merienda';
+    float: right;
+    width: 30%;
+    margin-top: 2%;
+    margin-right: 5px;
+    border-radius: 5px;
+    border:#142433 solid 1px;
+    font-size: 15px;
+    background-color: #89373d;
+    color: #142433;
+    cursor: pointer;
+}
+
+#Eliminar{
+    font-family: 'merienda';
+    float: right;
+    width: 30%;
+    margin-top: 2%;
+    margin-right: 5px;
+    border-radius: 5px;
+    border:#142433 solid 1px;
+    font-size: 15px;
+    background-color: #89373d;
+    color: #142433;
+    cursor: pointer;
+}
+
+.target, ★{
+    font-size: 20px;
+}

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollos Amparo</title>
+    <link rel="stylesheet" href="./view/CSS/estilos.css">
+</head>
+
+<body>
+
+    <div id="ContainerBotones">
+        <img src="./view/img/botones/logo.png" id="logotipo" onclick="pagPrincipal()">
+
+        <div class="botones" onclick="signIn()"><img src="./view/img/botones/usuario.png" id="iconos">
+            <h2>Ingresar / Registrarse</h2>
+        </div>
+
+        <div class="botones" onclick="catalogo()"><img src="./view/img/botones/catalogo.png" id="iconos">
+            <h2>Catalogo</h2>
+        </div>
+
+        <div class="botones" onclick="carrito()"><img src="./view/img/botones/carrito.png" id="iconos">
+            <h2>Carrito de compras</h2>
+        </div>
+
+        <div class="botones" onclick="locales()"><img src="./view/img/botones/local.png" id="iconos">
+            <h2>Locales</h2>
+        </div>
+
+    </div>
+    
+    <div id="containerPA"></div>
+
+    <template id="paginaPrincipal">
+        <div id="ContainerPrincipal">
+            <div id="containerProm">
+                <img src="./view/img/promocion.png" id="promocion" alt="promocion">
+            </div>
+        
+            <div id="containerProductos">
+                <h3>DESTACADOS</h3>
+                <div class="tarjeta">
+                    <h1>Bienvenido!!</h1>
+                    <h6>Venta de pollo frito, asado, crispy, agridulce, salteado, sudado, broaster</h6>
+                    <img src="./view/img/giphy.gif" id="fotos">
+                </div>
+
+                <div class="tarjeta">
+                    <h1>Pollo Broaster</h1>
+                    <h6>Venta de pollo frito, asado, crispy, agridulce, salteado, sudado, broaster</h6>
+                    <img src="./view/img/broaster.jpg" id="fotos">
+                </div>
+        
+                <div class="tarjeta">
+                    <h1>Pollo Agridulce</h1>
+                    <h6>Venta de pollo frito, asado, crispy, agridulce, salteado, sudado, broaster</h6>
+                    <img src="./view/img/agridulce.jpg" id="fotos">
+                </div>
+            </div>
+        
+            <div id="containerInferior">
+            <div class="texto">
+                <h4>Descubre la variedad de sabores en cada bocado de nuestros deliciosos pollos</h4>
+                <p>Contacto</p>
+                </li>
+                <p>Correo Electronico: PollosAmparoS.A.S@gmail.com</p>
+                <p>Telefono: 3102477696</p>
+            </div>
+            <img src="./view/img/Pollo.png" id="pollo">
+        </div>
+    </template>
+
+    <template id="login">
+        <div id="Login">
+            <div id="container">
+                <div class="container">
+                    <h2>Pollos Amparo</h2>
+                    <form id="formLogin">
+                        <div class="usuario">
+                            <p>
+                                <h1>Iniciar Sesion</h1>
+                                <input type="text" name="usuario" class="casilla" placeholder="Usuario" required>
+                            </p>
+                        </div>
+                        <div class="contraseña">
+                            <p>
+                                <input type="password" name="contraseña" class="casilla" placeholder="Contraseña" required>
+                            </p>
+                        </div>
+                        <button type="submit" class="ingresar" onclick="pagPrincipalLogin()">Ingresar</button>
+                        <button type="submit" class="registrar" onclick="registro()">Registrar</button>
+                        <button type="submit" class="olvidemicontraseña" onclick="recContra()">Olvide mi contraseña</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bannerInferior">
+            <div class="banner">
+                <h1>Bienvenido.</h1>
+                <h2>Pollos amparo es una empresa comprometida con la calidad y el sabor en cada uno de sus productos, con el objetivo de ofrecer pollo fresco y sabroso.</h2>
+                <img src="./view/img/Pollo.png" id="pollo2">
+                <img src="./view/img/promo.jpg.png" class="promo">
+            </div>        
+        </div>
+    </template>
+
+    <template id="registro">
+        <div id="ContainerPrincipal">
+            <div id="containerProm">
+                <img src="./view/img/promocion.png" id="promocion" alt="promocion">
+            </div>
+            <div id="registrarse">
+
+                    <h1>Registrarse</h1>
+                    <form action="registro.php" method="POST" id="formRegistro">
+
+                        <input type="text" name="nombre" id="casillasRegistro" placeholder="Nombre" required>
+                        <input type="text" name="apellido" id="casillasRegistro" placeholder="Apellido" required>
+                        <input type="tel" name="telefono" id="casillasRegistro" placeholder="Telefono" required>
+                        <input type="tel" name="telefonoFijo" id="casillasRegistro" placeholder="Telefono fijo (opcional)">
+                        <input type="email" name="correo" id="casillasRegistro" placeholder="Correo" required>
+                        <input type="password" name="contraseña" id="casillasRegistro" placeholder="Contraseña" required>
+                        
+                        <h4>Ciudad</h4>
+                        <select name="Ciudad" id="casillaSeleccionRegistro" required>
+                            <option value="Seleccionar">- Seleccionar -</option>
+                            <option value="Bogotá">Bogotá</option>
+                            <option value="Medellín">Medellín</option>
+                            <option value="Cartagena">Cartagena</option>
+                            <option value="Cali">Cali</option>
+                            <option value="Santa Marta">Santa Marta</option>
+                            <option value="Barranquilla">Barranquilla</option>
+                            <option value="Villavicencio">Villavicencio</option>
+                            <option value="San Gil">San Gil</option>
+                            <option value="Bucaramanga">Bucaramanga</option>
+                        </select>
+                        
+                        <h4>Direccion:</h4>
+                        <input type="text" id="casillaLargaRegistro">
+    
+                        <button type="submit" id="botonCancelar" onclick="signIn()">Cancelar</button>
+                        <button type="submit" id="botonRegistro" onclick="registroLogin()">Registrarse</button>
+    
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+    </template>    
+    
+    <template id="recuperarContraseña">
+    <div id="Login">
+        <div id="container">
+            <div class="container">
+                <h2>Pollos Amparo</h2>
+                <form action="login.php" method="post" id="formRecContra">
+                    <div class="usuario">
+                        <p>
+                            <h1>Recuperar Contraseña</h1>
+                            <input type="text" name="usuario" class="casilla" placeholder="Correo electronico" required>
+                        </p>
+                    </div>
+                    <div class="contraseña">
+                    </div>
+                    <button type="submit" class="cancelar" onclick="signIn()">Cancelar</button>
+                    <button type="submit" class="recuperar" onclick="formRecContra()">Recuperar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </template>
+
+    <template id="recuperarContraseñaToken">
+            <div id="Login">
+                <div id="container">
+                    <div class="container">
+                        <h2>Pollos Amparo</h2>
+                        <form method="post" id="recContraToken">
+                            <div class="usuario">
+                                <p>
+                                    <h1>Ingrese el codigo enviado a su correo</h1>
+                                </p>
+                                <input type="text" name="codigo" class="casilla" placeholder="Codigo" required>
+                            </p>
+                            </div>
+                            <div class="contraseña">
+                            </div>
+                            <button type="submit" class="cancelar" onclick="signIn()">Cancelar</button>
+                            <button type="submit" class="recuperar" onclick="recContraToken()">Aceptar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </template>
+
+    <template id="nuevaContraseña">
+        <div id="Login">
+            <div id="container">
+                <div class="container">
+                    <h2>Pollos Amparo</h2>
+                    <form method="post" id="formNuevaContraseña">
+                            <div class="usuario">
+                                <p>
+                                    <h1>Ingresar contraseña</h1>
+                                </p>
+                                <input type="text" name="contraseña" class="casilla" placeholder="Ingresar contraseña" required>
+                            </p>
+                            <input type="text" name="confirmar contraseña" class="casilla" placeholder="Confirmar contraseña" required>
+                        </p>
+                            </div>
+                            <div class="contraseña">
+                            </div>
+                            <button type="submit" class="cancelar" onclick="catalogo()">Cancelar</button>
+                            <button type="submit" class="recuperar" onclick="nuevaContraseña()">Aceptar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </template>
+
+    <template id="catalogo">
+        <div id="ContainerPrincipal">
+            <div id="containerProm">
+                <img src="./view/img/promocion.png" id="promocion" alt="promocion">
+            </div>
+            <div class="catalogo">
+                <h1>Catalogo</h1>
+                    <input type="text" id="barraBusqueda" placeholder="Buscar">
+                    <button type="button" id="favorito" onclick="favoritos()"><b>Favoritos</b></button>
+            </div>
+    
+                <div id="containerProductos">
+                    <div class="target"><img src="./view/img/producto.jpg" alt="producto" id="producto"><button id="calificar" onclick="calificacion()">★ Calificar</button><button type="submit" id="agregar">Agregar</button></div>
+                    <div class="target"><img src="./view/img/producto.jpg" alt="producto" id="producto"><button id="calificar" onclick="calificacion()">★ Calificar</button><button type="submit" id="agregar">Agregar</button></div>
+                    <div class="target"><img src="./view/img/producto.jpg" alt="producto" id="producto"><button id="calificar" onclick="calificacion()">★ Calificar</button><button type="submit" id="agregar">Agregar</button></div>
+                    <div class="target"><img src="./view/img/producto.jpg" alt="producto" id="producto"><button id="calificar" onclick="calificacion()">★ Calificar</button><button type="submit" id="agregar">Agregar</button></div>
+                    <div class="target"><img src="./view/img/producto.jpg" alt="producto" id="producto"><button id="calificar" onclick="calificacion()">★ Calificar</button><button type="submit" id="agregar">Agregar</button></div>
+                    <div class="target"><img src="./view/img/producto.jpg" alt="producto" id="producto"><button id="calificar" onclick="calificacion()">★ Calificar</button><button type="submit" id="agregar">Agregar</button></div>
+                    <div class="target"><img src="./view/img/producto.jpg" alt="producto" id="producto"><button id="calificar" onclick="calificacion()">★ Calificar</button><button type="submit" id="agregar">Agregar</button></div>
+                    <div class="target"><img src="./view/img/producto.jpg" alt="producto" id="producto"><button id="calificar" onclick="calificacion()">★ Calificar</button><button type="submit" id="agregar">Agregar</button></div>
+                    <div class="target"><img src="./view/img/producto.jpg" alt="producto" id="producto"><button id="calificar" onclick="calificacion()">★ Calificar</button><button type="submit" id="agregar">Agregar</button></div>
+                    <div class="target"><img src="./view/img/producto.jpg" alt="producto" id="producto"><button id="calificar" onclick="calificacion()">★ Calificar</button><button type="submit" id="agregar">Agregar</button></div>
+                    <div class="target"><img src="./view/img/producto.jpg" alt="producto" id="producto"><button id="calificar" onclick="calificacion()">★ Calificar</button><button type="submit" id="agregar">Agregar</button></div>
+                    <div class="target"><img src="./view/img/producto.jpg" alt="producto" id="producto"><button id="calificar" onclick="calificacion()">★ Calificar</button><button type="submit" id="agregar">Agregar</button></div>
+                </div>
+        </div>
+    </template>
+
+    <template id="favoritos">
+        <div id="ContainerPrincipal">
+            <div id="containerProm">
+                <img src="./view/img/promocion.png" id="promocion" alt="promocion">
+            </div>
+            <div class="catalogo">
+                <h1>Favoritos</h1>
+                <input type="text" id="barraBusqueda" placeholder="Buscar">
+                <button type="button" class="agregar" onclick="catalogo()"><b>Agregar</b></button>
+            </div>
+    
+    
+    
+                <div id="containerProductos">
+                    <div class="target">
+                        <img src="./view/img/producto.jpg" alt="producto" id="producto">
+                        <button id="calificar" onclick="calificacion()">★ Calificar</button>
+                        <button type="submit" id="Agregar">Comprar</button>
+                        <button type="reset" id="Eliminar">Eliminar</button>
+                    </div>
+                    <div class="target">
+                        <img src="./view/img/producto.jpg" alt="producto" id="producto">
+                        <button id="calificar" onclick="calificacion()">★ Calificar</button>
+                        <button type="submit" id="Agregar">Comprar</button>
+                        <button type="reset" id="Eliminar">Eliminar</button>
+                    </div>
+                    <div class="target">
+                        <img src="./view/img/producto.jpg" alt="producto" id="producto">
+                        <button id="calificar" onclick="calificacion()">★ Calificar</button>
+                        <button type="submit" id="Agregar">Comprar</button>
+                        <button type="reset" id="Eliminar">Eliminar</button>
+                    </div>
+                    <div class="target">
+                        <img src="./view/img/producto.jpg" alt="producto" id="producto">
+                        <button id="calificar" onclick="calificacion()">★ Calificar</button>
+                        <button type="submit" id="Agregar">Comprar</button>
+                        <button type="reset" id="Eliminar">Eliminar</button>
+                    </div>
+                    <div class="target">
+                        <img src="./view/img/producto.jpg" alt="producto" id="producto">
+                        <button id="calificar" onclick="calificacion()">★ Calificar</button>
+                        <button type="submit" id="Agregar">Comprar</button>
+                        <button type="reset" id="Eliminar">Eliminar</button>
+                    </div>
+                    <div class="target">
+                        <img src="./view/img/producto.jpg" alt="producto" id="producto">
+                        <button id="calificar" onclick="calificacion()">★ Calificar</button>
+                        <button type="submit" id="Agregar">Comprar</button>
+                        <button type="reset" id="Eliminar">Eliminar</button>
+                    </div>
+                    <div class="target">
+                        <img src="./view/img/producto.jpg" alt="producto" id="producto">
+                        <button id="calificar" onclick="calificacion()">★ Calificar</button>
+                        <button type="submit" id="Agregar">Comprar</button>
+                        <button type="reset" id="Eliminar">Eliminar</button>
+                    </div>
+                    <div class="target">
+                        <img src="./view/img/producto.jpg" alt="producto" id="producto">
+                        <button id="calificar" onclick="calificacion()">★ Calificar</button>
+                        <button type="submit" id="Agregar">Comprar</button>
+                        <button type="reset" id="Eliminar">Eliminar</button>
+                    </div>
+                    <div class="target">
+                        <img src="./view/img/producto.jpg" alt="producto" id="producto">
+                        <button id="calificar" onclick="calificacion()">★ Calificar</button>
+                        <button type="submit" id="Agregar">Comprar</button>
+                        <button type="reset" id="Eliminar">Eliminar</button>
+                    </div>
+                    <div class="target">
+                        <img src="./view/img/producto.jpg" alt="producto" id="producto">
+                        <button id="calificar" onclick="calificacion()">★ Calificar</button>
+                        <button type="submit" id="Agregar">Comprar</button>
+                        <button type="reset" id="Eliminar">Eliminar</button>
+                    </div>
+                    <div class="target">
+                        <img src="./view/img/producto.jpg" alt="producto" id="producto">
+                        <button id="calificar" onclick="calificacion()">★ Calificar</button>
+                        <button type="submit" id="Agregar">Comprar</button>
+                        <button type="reset" id="Eliminar">Eliminar</button>
+                    </div>
+                    <div class="target">
+                        <img src="./view/img/producto.jpg" alt="producto" id="producto">
+                        <button id="calificar" onclick="calificacion()">★ Calificar</button>
+                        <button type="submit" id="Agregar">Comprar</button>
+                        <button type="reset" id="Eliminar">Eliminar</button>
+                    </div>
+                </div>
+        </div>
+    </template>
+
+    <template id="calificacion">
+        <div id="ContainerPrincipal">
+            <div id="containerProm">
+                <img src="./view/img/promocion.png" id="promocion" alt="promocion">
+            </div>
+            <div id="ContainerCalificacion">
+                <h1>Calificaciones</h1>
+                <div class="targetCalificacion"><img src="./view/img/producto.jpg" id="producto"></div>
+            <div class="estrellas">
+                <h3>DESCRIPCIÓN</h3>
+                    <h2>Calificacion del producto</h2>
+                    <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem quos praesentium in
+                    labore iste. Provident, facilis voluptatem! Non, molestias natus? Ad porro ipsa tempore
+                    doloremque ducimus fugit quis maiores molestiae.</h6>
+                    <form>
+                        <p class="clasificacion">
+                            <input id="radio1" type="radio" name="estrellas" value="5">
+                            <label for="radio1">★</label>
+                            <input id="radio2" type="radio" name="estrellas" value="4">
+                            <label for="radio2">★</label>
+                            <input id="radio3" type="radio" name="estrellas" value="3">
+                            <label for="radio3">★</label>
+                            <input id="radio4" type="radio" name="estrellas" value="2">
+                            <label for="radio4">★</label>
+                            <input id="radio5" type="radio" name="estrellas" value="1">
+                            <label for="radio5">★</label>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div id="ContainerComentarios">
+                <h1>¿Te gustaria calificarnos?</h1>
+                <div class="comentarios"></div>
+                <form>
+                    <p class="clasificacion2">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4">
+                        <label for="radio2">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3">
+                        <label for="radio3">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2">
+                        <label for="radio4">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1">
+                        <label for="radio5">★</label>
+                    </p>
+                </form>
+                <input type="text" id="comentarios" placeholder="Comentar">
+                <h2>Opiniones</h2>
+                <input type="text" id="opiniones">
+            </div>
+            <button id="cancelarComentarios" type="reset" onclick="catalogo()">Cancelar</button>
+            <button id="enviarComentarios" type="submit">Enviar</button>
+        </div>
+    </template>
+
+    <template id="carrito">
+        <div id="ContainerPrincipal">
+            <div class="contador">
+                <div class="targetCarrito"><img src="./view/img/producto.jpg" alt="producto" class="producto"></div>
+                <button class="decrementar">-</button>
+                <span class="valor">0</span>
+                <button class="incrementar">+</button>
+            </div>
+            <div class="contador">
+                <div class="targetCarrito"><img src="./view/img/producto.jpg" alt="producto" class="producto"></div>
+                <button class="decrementar">-</button>
+                <span class="valor">0</span>
+                <button class="incrementar">+</button>
+            </div>
+            <div class="contador">
+                <div class="targetCarrito"><img src="./view/img/producto.jpg" alt="producto" class="producto"></div>
+                <button class="decrementar">-</button>
+                <span class="valor">0</span>
+                <button class="incrementar">+</button>
+            </div>
+            <div class="contador">
+                <div class="targetCarrito"><img src="./view/img/producto.jpg" alt="producto" class="producto"></div>
+                <button class="decrementar">-</button>
+                <span class="valor">0</span>
+                <button class="incrementar">+</button>
+            </div>
+            <div class="contador">
+                <div class="targetCarrito"><img src="./view/img/producto.jpg" alt="producto" class="producto"></div>
+                <button class="decrementar">-</button>
+                <span class="valor">0</span>
+                <button class="incrementar">+</button>
+            </div>
+            <div class="contador">
+                <div class="targetCarrito"><img src="./view/img/producto.jpg" alt="producto" class="producto"></div>
+                <button class="decrementar">-</button>
+                <span class="valor">0</span>
+                <button class="incrementar">+</button>
+            </div>
+            <div class="contador">
+                <div class="targetCarrito"><img src="./view/img/producto.jpg" alt="producto" class="producto"></div>
+                <button class="decrementar">-</button>
+                <span class="valor">0</span>
+                <button class="incrementar">+</button>
+            </div>
+            <div class="contador">
+                <div class="targetCarrito"><img src="./view/img/producto.jpg" alt="producto" class="producto"></div>
+                <button class="decrementar">-</button>
+                <span class="valor">0</span>
+                <button class="incrementar">+</button>
+            </div>
+            <div class="contador">
+                <div class="targetCarrito"><img src="./view/img/producto.jpg" alt="producto" class="producto"></div>
+                <button class="decrementar">-</button>
+                <span class="valor">0</span>
+                <button class="incrementar">+</button>
+            </div>
+            <div class="contador">
+                <div class="targetCarrito"><img src="./view/img/producto.jpg" alt="producto" class="producto"></div>
+                <button class="decrementar">-</button>
+                <span class="valor">0</span>
+                <button class="incrementar">+</button>
+            </div>
+            <div class="contador">
+                <div class="targetCarrito"><img src="./view/img/producto.jpg" alt="producto" class="producto"></div>
+                <button class="decrementar">-</button>
+                <span class="valor">0</span>
+                <button class="incrementar">+</button>
+            </div>
+            <div class="contador">
+                <div class="targetCarrito"><img src="./view/img/producto.jpg" alt="producto" class="producto"></div>
+                <button class="decrementar">-</button>
+                <span class="valor">0</span>
+                <button class="incrementar">+</button>
+            </div>
+    </div>
+<script>
+        document.querySelectorAll('.contador').forEach(contador => {
+            const valor = contador.querySelector('.valor');
+            const decrementar = contador.querySelector('.decrementar');
+            const incrementar = contador.querySelector('.incrementar');
+    
+            decrementar.addEventListener('click', () => {
+                let numero = parseInt(valor.textContent);
+                if (numero > 0) {
+                    valor.textContent = numero - 1;
+                }
+            });
+    
+            incrementar.addEventListener('click', () => {
+                let numero = parseInt(valor.textContent);
+                valor.textContent = numero + 1;
+            });
+        });
+</script>
+    </div>
+
+    <button id="botonComprar" onclick="pedidos()">comprar</button>
+    
+    </template>
+
+    <template id="locales">
+        <div id="ContainerPrincipal">
+            <div id="containerProm">
+                <img src="./view/img/promocion.png" id="promocion" alt="promocion">
+            </div>
+            <div id="mapa">
+                <h1>Locales</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15905.538582928744!2d-74.10856855!3d4.70305885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1722440056309!5m2!1ses-419!2sco" width="1000" height="700" style="border:1px solid black; left:75px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="informacion">
+                <h2>Informacion locales en Bogota:</h2>
+                <h3>Sucursal Norte</h3>
+                <h3>Dirección: Carrera 19 # 106 - 16</h3>
+                <h3>Teléfono: (1) 637-281</h3>
+                <br>
+                <h3>Sucursal Sur</h3>
+                <h3>Dirección: Avenida Boyacá # 58 - 30</h3>
+                <h3>Teléfono: (1) 457-6893</h3>
+                <br>
+                <h3>Sucursal Centro</h3>
+                <h3>Dirección: Calle 13 # 5 - 20</h3>
+                <h3>Teléfono: (1) 342-8820</h3>
+            </div>
+        </div>
+    </template>
+
+    <template id="pedidos">
+        <div id="ContainerPrincipal">
+            <div id="containerProm">
+                <img src="./view/img/promocion.png" id="promocion" alt="promocion">
+            </div>
+                <div class="containerDatosP">
+                    <div class="contenedorProducto">
+                        <img src="./view/img/producto.jpg" alt="imagenProducto" class="imagenProducto">
+                    </div>
+                    <form>
+                        <h1>Seleccione sus productos</h1>
+                        <div class="seleccionArriba">
+                            <div>
+                                <h1>Bebidas</h1>
+                                <select id="casillaSeleccionArriba1Pedido" name="bebidas">
+                                    <option value="EscojaUnaBebida" hidden>Escoja una bebida</option>
+                                    <option value="Coca Cola">Coca Cola</option>
+                                    <option value="Fanta">Fanta</option>
+                                    <option value="Pepsi">Pepsi</option>
+                                </select>
+                            </div>
+                    
+                            <div>
+                                <h1>Salsas</h1>
+                                <select id="casillaSeleccionArriba2Pedido" name="salsas">
+                                    <option value="EscojaUnaBebida" hidden>Escoja una salsa</option>
+                                    <option value="Coca Cola">Aji</option>
+                                    <option value="Fanta">Tomate</option>
+                                    <option value="Pepsi">Mayonesa</option>
+                                </select>
+                            </div>
+                        </div>
+        
+                        <div class="seleccionAbajo">
+                            <div>
+                                <h1>Extras</h1>
+                                <select id="casillaSeleccionAbajo1Pedido" name="Extras">
+                                    <option value="EscojaUnaBebida" hidden>Escoja un extra</option>
+                                    <option value="Coca Cola">Papas a la francesa</option>
+                                    <option value="Fanta">Papa Asada</option>
+                                    <option value="Pepsi">Sopa de menudencia</option>
+                                </select>
+                            </div>
+        
+                            <div>
+                                <h1>Excluir</h1>
+                                <select id="casillaSeleccionAbajo2Pedido" name="Excluir">
+                                    <option value="EscojaUnaBebida" hidden>Excluya el producto que desee</option>
+                                    <option value="Coca Cola">x</option>
+                                    <option value="Fanta">x</option>
+                                    <option value="Pepsi">x</option>
+                                </select>
+                            </div>
+                        </div>
+        
+                        <div class="cajaCodigo">
+                            <div>
+                                <h1>Codigo de descuento</h1>
+                                <input type="number" name="codigo" id="cajaCodigo" placeholder="Codigo de descuento">
+                            </div>
+                        </div>
+        
+                        <h1>Datos</h1>
+                        <div class="contenedorDatos">
+                            <div>
+                                <h1 for="nombre">Nombres</h1>
+                                <input type="text" id="casillaDatos" name="nombre" required placeholder="Nombres">
+                            </div>
+        
+                            <div>
+                                <h1 for="nombre">Telefono</h1>
+                                <input type="number" id="casillaDatos" name="telefono" required placeholder="Telefono">
+                            </div>
+        
+                        </div>
+        
+                        <div class="contenedorDatos2">
+                            <div>
+                                <h1 for="direccion">Dirección</h1>
+                                <input type="text" id="casillaDireccionPedido" name="direccion" required placeholder="Dirección">
+                            </div>
+                            <div>
+                                <h1 for="comentarios">Pedido</h1>
+                                <input type="text" id="casillaPedido" name="comentarios" rows="4" placeholder="Pedido"></input>
+                            </div>
+                        </div>
+                        
+                        <div class="cajaBotones">
+                            <button type="submit" value="cancelar" class="botonCancelar" onclick="carrito()">Cancelar</button>
+                            <button type="submit" value="confirmar" class="botonConfirmar">Confirmar</button>
+                        </div>
+        
+                    </form>
+                    </div>
+                </div>
+    </template>
+
+    <script src="./view/js/view.js"></script>
+    <script src="./controller/controller.js"></script>
+
+</body>
+</html>
